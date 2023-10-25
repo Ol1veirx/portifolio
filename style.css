@@ -88,7 +88,7 @@ body{
     color: var(--cor04);
     border: 1px solid var(--cor04);
     border-radius: .4rem;
-    box-shadow: 6px 6px 50px var(--cor00);
+    box-shadow: 6px 6px 50px var(--cor00); 
 }
 
 #projetos{
@@ -110,6 +110,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .projeto1, .projeto2, .projeto3 {
@@ -119,6 +120,13 @@ body{
     background-color: var(--cor03);
     border-radius: 1rem;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.342);
+    transition: transform 0.5s ease;
+}
+
+.projeto1:hover, 
+.projeto2:hover, 
+.projeto3:hover{
+    transform: scale(1.1);
 }
 
 #contatos{
@@ -149,6 +157,11 @@ body{
     background-color: #044040;
     border-radius: 30%;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.342);
+    transition: transform 0.3s ease;
+}
+
+.icon-contatos img:hover{
+    transform: scale(1.3);
 }
 
 /* #ultima-sec{
@@ -158,10 +171,10 @@ body{
 } */
 
 footer{
-    background-color: #591C21;
-    position: block;
     bottom: 0;
     width: 100%;
+    padding: 3px;
+    background-color: #591C21;
     text-align: center;
 }
 
